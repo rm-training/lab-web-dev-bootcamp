@@ -1,0 +1,77 @@
+<style>
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #c7e0ff;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    nav ul li {
+        flex-grow: 1;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        padding: 10px 5px;
+        display: block;
+        border: 1px solid #a2ccff;
+        border-bottom: 0;
+        border-top: 0;
+        color: #333;
+    }
+
+    nav ul li:first-child a {
+        border-left: none;
+    }
+
+    nav ul li:last-child {
+        margin-left: auto;
+    }
+    nav ul li:last-child a{
+        border-right: none;
+    }
+
+    nav ul li.active a{
+        background-color: #fff;
+        font-weight: bold;
+        border-top: #f9f9f9;
+        padding-top: 10px;
+        -webkit-box-shadow: 10px 10px 29px -9px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 29px -9px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 29px -9px rgba(0,0,0,0.75);
+    }
+
+    nav ul li a:hover {
+        transition-property: box-shadow, background-color; 
+        transition-duration: 1s;
+        -webkit-box-shadow: 5px 5px 29px -9px rgba(0,0,0,0.75);
+        -moz-box-shadow: 5px 5px 29px -9px rgba(0,0,0,0.75);
+        box-shadow: 5px 5px 29px -9px rgba(0,0,0,0.75);
+    }
+</style>
+
+<nav>
+    <ul>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li class="active">
+            <a href="#">About Me</a>
+        </li>
+        <li>
+            <a href="#">Contact Page</a>
+        </li>
+        <li>
+            <a href="#">Log in</a>
+        </li>
+    </ul>
+</nav>
