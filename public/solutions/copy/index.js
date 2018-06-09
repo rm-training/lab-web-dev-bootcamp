@@ -8,25 +8,21 @@
  *
  */
 var copy = function (object) {
-
   var newObject = {};
 
   for (var prop in object) {
-
   	if (object.hasOwnProperty(prop)) {
   		newObject[prop] = object[prop];
   	}
-
   }
 
   return newObject;
-
 };/**/
 
 var testObject = {
- name: 'Ryan',
- id: 10
-}
+  name: 'Ryan',
+  id: 10
+};
 var copied = copy(testObject);
 copied.id = 5;
 
@@ -40,4 +36,4 @@ console.assert(copied !== testObject);
  */
 /*copy = function(object) {
 	return Object.assign({}, object);
-}/**/
+}/* */
