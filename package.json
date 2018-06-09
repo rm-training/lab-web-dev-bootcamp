@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch data/db.json",
-    "https": "node bin/https-server",
+    "api": "json-server --watch data/db.json",
+    "api-https": "node bin/https-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ryan Morris",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.19.1",
+    "http-server": "^0.11.1",
     "json-server": "^0.13.0"
   }
 }
