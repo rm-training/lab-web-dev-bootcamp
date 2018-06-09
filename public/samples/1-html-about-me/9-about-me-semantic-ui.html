@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Closure Exercise</title>
-		<link href="8-about-me-full-document.css" rel="stylesheet" type="text/css"/>
+        <title>Closure Exercise</title>
+        <link href="/styles/semantic.min.css" rel="stylesheet" type="text/css">
+		<link href="8-about-me-full-document.css" rel="stylesheet" type="text/css">
 	</head>
 
 	<body>
@@ -12,13 +13,11 @@
 				<h2>Man of mystery</h2>
 			</header>
 
-			<nav>
-				<ul>
-					<li><a href="8-about-me-full-document.html">About Me</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="8-about-me-contact.html">Contact</a></li>
-				</ul>
-			</nav>
+            <nav class="ui three item menu">
+                <a href="8-about-me-full-document.html" class="active item">About Me</a>
+                <a class="item">Home</a>
+                <a href="8-about-me-contact.html" class="item">Contact</a>
+            </nav>
 
 			<!-- could be div#main or section -->
 			<!-- i feel like it could be syndicated -->
