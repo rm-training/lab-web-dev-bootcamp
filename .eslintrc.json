@@ -8,6 +8,7 @@
         "no-var": 0,
         "vars-on-top": 0,
         "no-console": 0,
-        "comma-dangle": 0
+        "comma-dangle": 0,
+        "no-plusplus": 0
     }
 }

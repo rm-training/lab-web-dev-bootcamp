@@ -4,13 +4,16 @@
 // In the function below, return true if the input variable is equal
 // to the number 42.  Otherwise return false.  Use an `if' statement
 // to achieve this.
-function Exercise1 (input) {
+function Exercise1(input) {
+  if (input === 42) {
+    return true;
+  }
 
-  // Your code here.
-
+  return false;
 }
 
-/****************************************************************************/
+/************************console.assert(Exercise1('string') === false);
+****************************************************/
 // EXERCISE 2:
 //
 // In the function below, return true if the input variable is equal
@@ -18,20 +21,34 @@ function Exercise1 (input) {
 // In all other cases return false.
 //
 // Use an `if' statement to achieve this.
-function Exercise2 (input) {
+function Exercise2(input) {
+  if (input === 42) {
+    return true;
+  }
 
-  // Your code here.
+  if (input === 43) {
+    return null;
+  }
 
+  return false;
 }
 
 /****************************************************************************/
 // EXERCISE 3:
 //
 // Repeat exercise 2, this time using a `switch' statement.
-function Exercise3 (input) {
-
-  // Your code here.
-
+function Exercise3(input) {
+  switch (input) {
+    case 42:
+      return true;
+      break;
+    case 43:
+      return null;
+      break;
+    default:
+      return false;
+      break;
+  }
 }
 
 /****************************************************************************/
@@ -44,10 +61,10 @@ function Exercise3 (input) {
 //
 //     counter();
 //
-function Exercise4 (counter) {
-
-  // Your code here.
-
+function Exercise4(counter) {
+  for (var i = 0; i < 3; i++) {
+    counter();
+  }
 }
 
 /****************************************************************************/
@@ -55,8 +72,13 @@ function Exercise4 (counter) {
 //
 // The function below will be called with an array of numbers.  Return
 // the sum of those numbers.
-function Exercise5 (numbers) {
-
-  // Your code here.
-
+// No arguments and an empty array should return zero
+function Exercise5(numbers) {
+  var sum = 0;
+  if (numbers && numbers.length) {
+    for (var i = 0; i < numbers.length; i++) {
+      sum += numbers[i];
+    }
+  }
+  return sum;
 }
