@@ -8,12 +8,12 @@
 
 // 1)
 // Declare 2 to 5 variables (name them as you like)
-// Make at least one string, one number and one boolean. 
+// Make at least one string, one number and one boolean.
 // Log the typeof each to the console
 
 // 2)
 // Declare a new variable that stores the result of a mathematical expression
-// You can add/multiply/divide/modulo any set of numbers 
+// You can add/multiply/divide/modulo any set of numbers
 // Log the result to the console
 
 // 3)
@@ -29,7 +29,7 @@
 // e.g. var arr3 = arr1.concat(arr2);
 // Log the result to the console
 
-// 6) 
+// 6)
 // Create an object literal that represents a person (perhaps you!)
 // Define several properties within the object (name, hairColor, age, etc..)
 // Define at least one proprety that references an array
@@ -40,4 +40,6 @@
 // And once again Log the object to the console
 
 // 7) Bonus
-// Add a function (method) to the previous object you created to allow it to "speak" to the console. The function should expect a string argument and output "<object.name> said: <string>" to the console.
+// Add a function (method) to the previous object you created to
+// allow it to "speak" to the console.
+// The function should expect a string argument and output "<object.name> said: <string>" to the console.
