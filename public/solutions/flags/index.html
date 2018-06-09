@@ -2,12 +2,14 @@
 <html>
   <head>
     <title>Flag Exercise</title>
-    <link href="/core.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/semantic.min.css">
+    <link href="/styles/core.css" rel="stylesheet" type="text/css"/>
     <link href="index.css" rel="stylesheet" type="text/css"/>
   </head>
 
   <body>
-    <div id="container">
+  <section id="confirm-target" class="ui segment"></section>
+    <div id="container" class="ui container">
       <h1 class="foo">Find the flag elements.</h1>
 
       <div class="main">
@@ -71,8 +73,9 @@
       </div>
     </div>
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/linter.js"></script>
     <script src="flags.js"></script>
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/confirm.js"></script>
+    <script src="/tests/flags_test.js"></script>
   </body>
 </html>

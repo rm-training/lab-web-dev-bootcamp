@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server public -p 3030",
+    "start": "http-server public -p 3000",
     "api": "json-server --watch data/db.json",
     "api-https": "node bin/https-server",
     "test": "echo \"Error: no test specified\" && exit 1"
