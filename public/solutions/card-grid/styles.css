@@ -1,0 +1,55 @@
+/* general styles */
+.card {
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #ececec;
+    transition: box-shadow .2s ease-out;
+    border-radius: 3px;
+  }
+  
+  a.card:hover {
+    box-shadow: 2px 5px 5px black;
+  }
+  
+  .card:nth-child(4) {
+    margin-right: 0;
+    background-color: red;
+  }
+  
+  .card img{
+    width: 100%;
+  }
+  
+  /* float styles */
+  
+  .floated .card {
+    float: left;
+    width: calc(25% - 10px);
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+  }
+  
+  /* flex styles */
+  .flexed {
+    display: flex;
+    justify-content: space-around;
+      /* flex-direction, flex-wrap */
+    flex-flow: row wrap;
+    justify-content: flex-start; /* start at the beginning of the row */
+  }
+  
+  .flexed .card {
+    box-sizing: border-box;
+    padding: 10px;
+    /* flex-grow, flex-shrink, flex-basis */
+    flex: 0 1 calc(100% / 8);
+    /*flex-grow: 1;*/
+    border: 1px solid #f90;
+
+    /* to get even margins:
+    margin: auto;
+    flex-basis: calc(calc(100% / 8) - 10px);
+    */
+  }
+  
