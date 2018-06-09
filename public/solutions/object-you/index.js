@@ -14,21 +14,41 @@
  *
  * Part 3: Let’s assume you have a collection of something. Trophies?
  * Create an array property on your object that has a couple trophies inside it
- * 
+ *
  * Part 4: Add a function that outputs the trophy name to the consold
  *   me.viewTrophy(i)
  * This should log the name of the trophy at index i to the console
  *
  * Part 5: Add a function that lists trophies to the console
- *   me.listTrophies(i); 
+ *   me.listTrophies(i);
  * This should log a list of trophic names, separated by comma
  * ex: “gold star, track, silver medal”
  *
  * Bonus A: Make the "trophies" property non-enumerable
- * Hint: you'll need to use Object.defineProperty()
- * Hint: for (var prop in me) {console.log(prop);} 
+ * prop in me) {console.log(prop);}
  *       should not output "trophies" as an enumerable prop
  *
  * Bonus B: How might we make it so that your trophies are protected?
  * Hint: closures
 */
+
+var me = {
+  name: 'Jim Bob',
+  age: 105,
+  speak: function(words) {
+    console.log(this.name, 'says', words);
+  },
+  trophies: ['red', 'gold', 'swimming'],
+  viewTrophy: function(i) {
+    return this.trophies[i];
+  }
+}
+
+Object.defineProperty(me, 'trophies', {
+  enumerable: false
+});
+
+console.log(me.viewTrophy(1));
+for (var propName in me) {
+  console.log(propName, me[propName]);
+}

@@ -8,7 +8,5 @@
  *
  */
 function copy(object) {
-
   // Your code here.
-
 };

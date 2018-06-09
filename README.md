@@ -48,3 +48,21 @@ Keys not working? Create your own:
 ```
 openssl req -x509 -newkey rsa:2048 -keyout ./ssl/key.pem -out ./ssl/cert.pem -days 120 -nodes
 ```
+
+## Linting
+
+ESLint is packaged with the project, depending on your IDE you can enable it for style-validation of your JavaScript.
+
+I've disabled a few beneficial validations to prevent noisy lint feedback while learning the basics.
+
+```
+"no-var": 0,
+"vars-on-top": 0,
+"no-console": 0,
+"comma-dangle": 0,
+"no-plusplus": 0,
+"eol-last": 0,
+"no-param-reassign": 0,
+"no-shadow": 0,
+"func-names": 0
+```

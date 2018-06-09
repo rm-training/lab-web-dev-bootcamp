@@ -9,6 +9,14 @@
         "vars-on-top": 0,
         "no-console": 0,
         "comma-dangle": 0,
-        "no-plusplus": 0
+        "no-plusplus": 0,
+        "eol-last": 0,
+        "no-param-reassign": 0,
+        "no-shadow": 0,
+        "func-names": 0,
+        "no-restricted-syntax": 0,
+        "no-prototype-builtins": 0,
+        "prefer-template": 0,
+        "object-shorthand": 0
     }
 }
