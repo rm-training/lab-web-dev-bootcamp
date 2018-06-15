@@ -31,4 +31,13 @@
  *
  * Bonus B: How might we make it so that your trophies are protected?
  * Hint: closures
-*/
+*/var person = {
+	name: "Alex",
+	age: 17,
+	height: "6'1\"",
+	greeting:"Whats up bro?",
+	opinion: "Starbucks is overrated",
+	speak: function(){
+		console.log(this.name + " says " + this.greeting + " and " + this.opinion)
+	}
+}

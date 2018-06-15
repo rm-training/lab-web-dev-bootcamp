@@ -11,6 +11,7 @@
 // Make at least one string, one number and one boolean.
 // Log the typeof each to the console
 
+
 // 2)
 // Declare a new variable that stores the result of a mathematical expression
 // You can add/multiply/divide/modulo any set of numbers

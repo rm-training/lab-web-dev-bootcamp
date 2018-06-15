@@ -17,9 +17,13 @@ var users = [
 // The function below should return an array of users from the TEST
 // DATA above that only includes users under the age of 18.
 function Exercise1() {
-
-  // Your code here.
-
+  var endArray = [];
+  users.forEach(function (element) {
+    if (element.age < 18) {
+      endArray.push(element);
+    }
+  });
+  return endArray;
 }
 
 /*************************************************************************** */
@@ -29,7 +33,12 @@ function Exercise1() {
 // should be all of the usernames from the TEST DATA above, in the
 // same order.
 function Exercise2() {
+  var endArray = [];
+  users.forEach(function (element) {
+    endArray.push(element.username);
 
+  });
+  return endArray;
   // Your code here.
 
 }
@@ -42,10 +51,17 @@ function Exercise2() {
 // `toString()` method) from the TEST DATA above where the user is
 // over the age of 20 and younger than 40.
 function Exercise3() {
-
-  // Your code here.
-
+  var endArray = [];
+  users.forEach(function (element) {
+    if (element.age < 40 && element.age > 20) {
+      endArray.push(element.id.toString());
+    }
+  });
+  return endArray;
 }
+// Your code here.
+
+
 
 /** **************************************************************************/
 // (BONUS) EXERCISE 4:
@@ -53,6 +69,12 @@ function Exercise3() {
 // The function below should return the `users' array from above (TEST
 // DATA) in reverse order.  Do not use the built-in reverse function.
 function Exercise4() {
+  var endArray = [];
+  for (var i = users.length - 1; i >= 0; i--) {
+    endArray.push(users[i]);
+  }
+
+  return endArray;
 
   // Your code here.
 
