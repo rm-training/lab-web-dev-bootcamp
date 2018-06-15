@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photo Grid (with jQuery) Exercise</title>
+    <link rel="stylesheet" type="text/css" href="/styles/semantic.min.css">
+    <link href="/styles/core.css" rel="stylesheet" type="text/css"/>
+	</head>
+
+	<style>
+		#album img {
+			width: 20px;
+			height: 20px;
+		}
+	</style>
+
+  <body>
+		<div class="ui container">
+				<h2>Photos</h2>
+
+				<div id="album">
+					<p>We want our photos to show up here.</p>
+				</div>
+			</div>
+
+			<script id="photo-template" type="text/x-handlebars-template">
+				<div class="entry">
+					<h6>{{title}}</h6>
+					<img src="{{thumbnailUrl}}" alt="{{id}}" />
+				</div>
+			</script>
+		</div>
+
+		<script src="/scripts/jquery.js"></script>
+		<script src="script.js"></script>
+  </body>
+</html>
