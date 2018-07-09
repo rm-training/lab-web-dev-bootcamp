@@ -1,6 +1,6 @@
 # Web Dev Bootcamp
 
-This class is intended as a 3-5 day intensive to learn HTML, CSS and JS from the ground up.
+This repository includes lab material for learning web development, covering the basics of HTML, CSS and then diving deep into JavaScript. The content was created by Ryan Morris (unless otherwise stated within a file) and has been compiled from multiple class deliveries over the years into a single repository to support the entire web dev class cycle.
 
 ## Running the server
 
@@ -65,4 +65,5 @@ I've disabled a few beneficial validations to prevent noisy lint feedback while 
 "no-param-reassign": 0,
 "no-shadow": 0,
 "func-names": 0
+...
 ```
