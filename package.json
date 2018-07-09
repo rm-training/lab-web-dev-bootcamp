@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": "git@github.com:rm-training/web-dev-bc.git",
   "scripts": {
     "start": "http-server public -p 3000 -c-1",
     "api": "json-server --watch data/db.json",
