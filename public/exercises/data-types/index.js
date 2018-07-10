@@ -17,18 +17,22 @@
 // You can add/multiply/divide/modulo any set of numbers
 // Log the result to the console
 
+
 // 3)
 // Combine at least three strings together
 // Log the result to the console
+
 
 // 4)
 // Create an array with at least 5 values stored inside
 // Log the result to the console
 
+
 // 5)
 // Use Array.prototype.concat to add another array to your original array
 // e.g. var arr3 = arr1.concat(arr2);
 // Log the result to the console
+
 
 // 6)
 // Create an object literal that represents a person (perhaps you!)
@@ -39,6 +43,7 @@
 // And Log just "name" property to the console
 // Then... Change the "name" property to something else
 // And once again Log the object to the console
+
 
 // 7) Bonus
 // Add a function (method) to the previous object you created to

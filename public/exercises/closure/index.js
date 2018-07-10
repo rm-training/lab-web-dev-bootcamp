@@ -10,6 +10,6 @@
 //   getTemp: A function that returns the last temperature set by
 //            the setTemp function.
 //
-var ClosureExercise = function() {
+const ClosureExercise = function() {
   // Your code here.
 };

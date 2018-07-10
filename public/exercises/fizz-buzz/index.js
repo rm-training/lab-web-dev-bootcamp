@@ -16,9 +16,10 @@
  *
  * 1) Implement the fizzbuzz function:
  *  - It accepts a single number argument
- *  - Outputs the correct response to the console based on the FizzBuzz rules
+ *  - Returns the correct response based on the FizzBuzz rules
  *
- * 2) Create a loop that executes your fizzbuzz function for the numbers from 1 to 100
+ * 2) Create a loop that executes your fizzbuzz function
+ * for the numbers from 1 to 100 and logs the result to the console
  *
  * 3) BONUS 1 - write tests
  * use console.assert() to verify your function works as expected

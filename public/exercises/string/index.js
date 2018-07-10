@@ -19,4 +19,4 @@
  */
 function processString(input) {
   // Your code here.
-};
+}
