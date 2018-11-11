@@ -35,14 +35,14 @@
 var me = {
   name: 'Jim Bob',
   age: 105,
-  speak: function(words) {
+  speak: function (words) {
     console.log(this.name, 'says', words);
   },
   trophies: ['red', 'gold', 'swimming'],
-  viewTrophy: function(i) {
+  viewTrophy: function (i) {
     return this.trophies[i];
   }
-}
+};
 
 Object.defineProperty(me, 'trophies', {
   enumerable: false
@@ -52,3 +52,19 @@ console.log(me.viewTrophy(1));
 for (var propName in me) {
   console.log(propName, me[propName]);
 }
+
+// make trophies private through the user of a closure
+var me = (function () {
+  var trophies = ['red', 'gold', 'swimming'];
+
+  return {
+    name: 'Jim Bob',
+    age: 105,
+    speak: function (words) {
+      console.log(this.name, 'says', words);
+    },
+    viewTrophy: function (i) {
+      return trophies[i];
+    }
+  }
+}());

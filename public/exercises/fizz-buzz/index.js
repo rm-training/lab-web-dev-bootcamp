@@ -33,7 +33,10 @@ function fizzbuzz(n) {
   // 1) implement the function
 }
 
-// 2) run the function with a loop
+// 2) run the function within a loop
+// hint: for (var i=0; i<100; i++);
 
 // 3) BONUS 1
-// use console.assert() to test your function
+// test your function
+// use console.assert(), ex:
+// console.assert(fizzbuzz(3) === "Fizz");

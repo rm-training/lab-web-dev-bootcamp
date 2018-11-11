@@ -6,7 +6,7 @@
  * Calculate the sum of 1 and 2 then return the answer.
  */
 function Exercise1() {
-  return 1 + 2;
+  // return 1 + 2;
 }
 
 /**

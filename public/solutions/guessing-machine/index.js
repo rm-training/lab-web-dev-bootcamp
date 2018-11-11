@@ -19,21 +19,21 @@
  * You'll use Math.random() (most likely) to have it create a random number to "think of"
  * It returns an object interface
  */
-let GuessingModule = (function app(){
-	let x;
+let GuessingModule = (function app() {
+  let x;
 
-	function think_of_a_number() {
-		x = Math.floor(Math.random() * Math.floor(100));
-	}
+  function thinkOfANumber() {
+    x = Math.floor(Math.random() * Math.floor(100));
+  }
 
-	think_of_a_number();
+  thinkOfANumber();
 
-	return {
-		is_it: function (guess) {
-			console.log(x === guess ? "yes!" : "no");
-		},
-		give_up: function() {
-			console.log(x);
-		}
-	}
-})();
+  return {
+    isIt: function (guess) {
+      console.log(x === guess ? 'yes!' : 'no');
+    },
+    giveUp: function () {
+      console.log(x);
+    }
+  };
+}());

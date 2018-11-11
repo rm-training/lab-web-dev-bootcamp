@@ -11,13 +11,13 @@ var copy = function (object) {
   var newObject = {};
 
   for (var prop in object) {
-  	if (object.hasOwnProperty(prop)) {
-  		newObject[prop] = object[prop];
-  	}
+    if (object.hasOwnProperty(prop)) {
+      newObject[prop] = object[prop];
+    }
   }
 
   return newObject;
-};/**/
+};
 
 var testObject = {
   name: 'Ryan',

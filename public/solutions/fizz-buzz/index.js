@@ -24,17 +24,17 @@
  *
  */
 function fizzbuzz(n) {
-    var result = '';
+  var result = '';
 
-    if (n % 3 === 0) {
-        result += 'Fizz';
-    }
+  if (n % 3 === 0) {
+    result += 'Fizz';
+  }
 
-    if (n % 5 === 0) {
-        result += 'Buzz';
-    }
+  if (n % 5 === 0) {
+    result += 'Buzz';
+  }
 
-    return result;
+  return result;
 }
 
 for (var i = 0; i < 100; i++) {

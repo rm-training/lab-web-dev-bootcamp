@@ -35,17 +35,17 @@
 
 
 // 6)
-// Create an object literal that represents a person (perhaps you!)
-// Define several properties within the object (name, hairColor, age, etc..)
-// Define at least one proprety that references an array
-//  favColors, siblings, etc...
-// Log the object to the console
-// And Log just "name" property to the console
-// Then... Change the "name" property to something else
-// And once again Log the object to the console
+// Create an object literal that represents a User as it may be
+// stored in a database. It should have a few properties, such as:
+// - username (string)
+// - id (integer)
+// - first name (string)
+// - last name (string)
+// Log your User object to the console
 
 
 // 7) Bonus
-// Add a function (method) to the previous object you created to
-// allow it to "speak" to the console.
-// The function should expect a string argument and output "<object.name> said: <string>" to the console.
+// Add a function (method) to the User object to "speak"
+// The speak function should expect a single string argment
+// and log a message to the console like:
+// 	"{User.username} says {message}"
